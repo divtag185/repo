@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahmud Abdurrahman | Graphic Designer & Video Editor</title>
+
+  <!-- Font Awesome CDN (no folder needed) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ============================================================
+       SIDEBAR NAVIGATION (desktop)
+  ============================================================ -->
+  <nav class="sidebar" aria-label="Primary navigation">
+    <a href="#home"         class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#portfolio">Works</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ============================================================
+       HAMBURGER (mobile)
+  ============================================================ -->
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Mobile nav overlay -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="close-btn" id="closeNavBtn" aria-label="Close menu">
+      <i class="fa fa-times"></i>
+    </button>
+    <a href="#home"         class="nav-link">Home</a>
+    <a href="#about"        class="nav-link">About</a>
+    <a href="#resume"       class="nav-link">Resume</a>
+    <a href="#portfolio"    class="nav-link">Works</a>
+    <a href="#services"     class="nav-link">Services</a>
+    <a href="#testimonials" class="nav-link">Reviews</a>
+    <a href="#contact"      class="nav-link">Contact</a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT WRAPPER
+  ============================================================ -->
+  <div class="main-content">
+
+    <!-- ====================================================
+         SECTION 1 — HERO
+    ==================================================== -->
+    <section id="home">
+      <div class="hero-inner">
+        <!-- Left: text -->
+        <div class="fade-in">
+          <p class="hero-greeting">Hi there! I'm</p>
+          <h1 class="hero-name">
+            <span>Mahmud</span>
+            Abdurrahman
+          </h1>
+          <p class="hero-role">
+            <strong>Graphic Designer</strong> &amp; <strong>Video Editor</strong>
+          </p>
+          <p class="hero-desc">
+            Crafting bold visual identities and cinematic edits that tell compelling stories.
+            Passionate about transforming ideas into pixel-perfect designs and engaging motion content.
+          </p>
+
+          <!-- Social links with FA icons -->
+          <div class="hero-socials">
+            <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+
+          <!-- CTA buttons -->
+          <div style="display:flex;flex-wrap:wrap;gap:10px;">
+            <a href="#portfolio" class="btn">
+              <i class="fa fa-eye"></i> View My Work
+            </a>
+            <a href="#contact" class="btn">
+              <i class="fa fa-paper-plane"></i> Hire Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: photo -->
+        <div class="hero-photo-wrap fade-in">
+          <!-- Replace src with your actual photo. The placeholder below uses a gradient. -->
+          <div style="
+            width:100%;
+            aspect-ratio:3/4;
+            background:linear-gradient(135deg,#1A1A1A 60%,#F5C518 100%);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            gap:16px;
+          ">
+            <i class="fa fa-user" style="font-size:72px;color:rgba(255,255,255,0.2);"></i>
+            <span style="font-family:'Montserrat',sans-serif;font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:3px;">YOUR PHOTO HERE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 2 — ABOUT ME
+    ==================================================== -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="about-grid">
+          <!-- Left: text -->
+          <div class="fade-in">
+            <span class="section-label">Who I Am</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+              I'm <strong>Mahmud Abdurrahman</strong>, a Graphic Designer &amp; Video Editor
+              based in Nigeria. With over 5 years of experience delivering high-impact visuals
+              for brands, agencies, and content creators worldwide, I blend creativity with
+              strategy to produce work that resonates and converts.
+            </p>
+            <p class="section-subtitle" style="margin-top:14px;">
+              From brand identities and social media content to cinematic video edits and
+              motion graphics — I do it all with precision and passion.
+            </p>
+
+            <!-- Tools / stack pills with brand icons -->
+            <ul class="skills-list" style="margin-top:28px;">
+              <li><i class="fa-brands fa-adobe"></i> Photoshop</li>
+              <li><i class="fa-brands fa-adobe"></i> Illustrator</li>
+              <li><i class="fa-brands fa-adobe"></i> Premiere Pro</li>
+              <li><i class="fa-brands fa-adobe"></i> After Effects</li>
+              <li><i class="fa-brands fa-figma"></i> Figma</li>
+              <li><i class="fa-solid fa-film"></i> DaVinci Resolve</li>
+              <li><i class="fa-brands fa-adobe"></i> InDesign</li>
+              <li><i class="fa-solid fa-wand-magic-sparkles"></i> Canva Pro</li>
+            </ul>
+          </div>
+
+          <!-- Right: stats grid -->
+          <div class="fade-in">
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-number">5<sup>+</sup></div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">200<sup>+</sup></div>
+                <div class="stat-label">Projects Done</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">120<sup>+</sup></div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">15<sup>+</sup></div>
+                <div class="stat-label">Awards Won</div>
+              </div>
+            </div>
+
+            <!-- Download CV button -->
+            <a href="#" class="btn" style="margin-top:32px;">
+              <i class="fa fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 3 — RESUME
+    ==================================================== -->
+    <section id="resume">
+      <div class="section-inner">
+        <span class="section-label">My Story</span>
+        <h2 class="section-title">Resume</h2>
+
+        <div class="resume-grid">
+          <!-- Experience timeline -->
+          <div class="fade-in">
+            <p class="resume-col-title"><i class="fa fa-briefcase"></i> Experience</p>
+
+            <div class="timeline-item">
+              <span class="timeline-year">2022 — Present</span>
+              <p class="timeline-role">Senior Graphic Designer</p>
+              <p class="timeline-company">FreelanceHub Studio</p>
+              <p class="timeline-desc">Leading brand identity projects for international clients; creating social media kits, packaging designs, and motion graphics.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-year">2020 — 2022</span>
+              <p class="timeline-role">Video Editor &amp; Motion Designer</p>
+              <p class="timeline-company">BoldPixel Agency</p>
+              <p class="timeline-desc">Produced cinematic brand films, YouTube content, and animated explainer videos achieving 10M+ combined views.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-year">2018 — 2020</span>
+              <p class="timeline-role">Junior Graphic Designer</p>
+              <p class="timeline-company">Creativo Media</p>
+              <p class="timeline-desc">Designed print and digital marketing collateral for local businesses. Developed logo systems and brand guidelines.</p>
+            </div>
+
+            <p class="resume-col-title" style="margin-top:36px;"><i class="fa fa-graduation-cap"></i> Education</p>
+
+            <div class="timeline-item">
+              <span class="timeline-year">2014 — 2018</span>
+              <p class="timeline-role">B.Sc. Visual Arts &amp; Design</p>
+              <p class="timeline-company">University of Lagos</p>
+              <p class="timeline-desc">Graduated with First Class Honours. Thesis focused on typography in African brand communication.</p>
+            </div>
+          </div>
+
+          <!-- Skill bars -->
+          <div class="fade-in">
+            <p class="resume-col-title"><i class="fa fa-chart-bar"></i> Skills</p>
+
+            <!-- Each skill bar — change percentages to match your skill level -->
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-label"><span>Graphic Design</span><span>95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-label"><span>Brand Identity</span><span>92%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-label"><span>Video Editing</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-label"><span>Motion Graphics</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-label"><span>Typography</span><span>88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-label"><span>UI/UX Design</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-label"><span>Photography</span><span>70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 4 — PORTFOLIO
+    ==================================================== -->
+    <section id="portfolio">
+      <div class="section-inner">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">A curated selection of projects spanning branding, print, digital design, and video production.</p>
+
+        <!-- Filter buttons -->
+        <div class="portfolio-filters fade-in">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa fa-th"></i> All
+          </button>
+          <button class="filter-btn" data-filter="branding">
+            <i class="fa fa-trademark"></i> Branding
+          </button>
+          <button class="filter-btn" data-filter="social">
+            <i class="fa fa-share-nodes"></i> Social Media
+          </button>
+          <button class="filter-btn" data-filter="video">
+            <i class="fa fa-film"></i> Video
+          </button>
+          <button class="filter-btn" data-filter="print">
+            <i class="fa fa-print"></i> Print
+          </button>
+        </div>
+
+        <!-- Portfolio cards grid -->
+        <div class="portfolio-grid fade-in">
+
+          <!-- Card 1 -->
+          <div class="portfolio-card" data-category="branding">
+            <div class="card-placeholder">
+              <i class="fa fa-trademark"></i>
+              <span>Brand Identity</span>
+            </div>
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-icon"><i class="fa fa-eye"></i></div>
+              <h3>Luxe Brand Identity</h3>
+              <p>Branding</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="portfolio-card" data-category="video">
+            <div class="card-placeholder">
+              <i class="fa fa-clapperboard"></i>
+              <span>Cinematic Edit</span>
+            </div>
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-icon"><i class="fa fa-play"></i></div>
+              <h3>Product Launch Film</h3>
+              <p>Video Editing</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="portfolio-card" data-category="social">
+            <div class="card-placeholder">
+              <i class="fa fa-images"></i>
+              <span>Social Media Kit</span>
+            </div>
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-icon"><i class="fa fa-eye"></i></div>
+              <h3>Social Media Campaign</h3>
+              <p>Social Media</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="portfolio-card" data-category="print">
+            <div class="card-placeholder">
+              <i class="fa fa-book-open"></i>
+              <span>Magazine Layout</span>
+            </div>
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-icon"><i class="fa fa-eye"></i></div>
+              <h3>Editorial Magazine</h3>
+              <p>Print Design</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="portfolio-card" data-category="video">
+            <div class="card-placeholder">
+              <i class="fa fa-wand-magic-sparkles"></i>
+              <span>Motion Graphics</span>
+            </div>
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-icon"><i class="fa fa-play"></i></div>
+              <h3>Animated Explainer</h3>
+              <p>Motion Graphics</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="portfolio-card" data-category="branding">
+            <div class="card-placeholder">
+              <i class="fa fa-palette"></i>
+              <span>Packaging Design</span>
+            </div>
+            <div class="portfolio-card-overlay">
+              <div class="portfolio-icon"><i class="fa fa-eye"></i></div>
+              <h3>Product Packaging</h3>
+              <p>Branding</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- /portfolio-grid -->
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 5 — SERVICES
+    ==================================================== -->
+    <section id="services">
+      <div class="section-inner">
+        <span class="section-label">What I Do</span>
+        <h2 class="section-title">Services</h2>
+
+        <div class="services-grid">
+
+          <div class="service-card fade-in">
+            <div class="service-icon"><i class="fa fa-pen-nib"></i></div>
+            <h3>Brand Identity</h3>
+            <p>Logo design, brand guidelines, typography systems, and visual identity packages that make your brand unforgettable.</p>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon"><i class="fa fa-film"></i></div>
+            <h3>Video Editing</h3>
+            <p>Cinematic cuts, colour grading, sound design, and storytelling edits for YouTube, ads, reels, and brand films.</p>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon"><i class="fa fa-wand-magic-sparkles"></i></div>
+            <h3>Motion Graphics</h3>
+            <p>Animated intros/outros, kinetic typography, explainer animations, and dynamic social media templates.</p>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon"><i class="fa fa-share-nodes"></i></div>
+            <h3>Social Media Design</h3>
+            <p>Scroll-stopping posts, story templates, carousels, and content kits tailored for Instagram, TikTok, and LinkedIn.</p>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon"><i class="fa fa-print"></i></div>
+            <h3>Print &amp; Packaging</h3>
+            <p>Flyers, brochures, business cards, banners, and product packaging designed for maximum shelf impact.</p>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon"><i class="fa fa-photo-film"></i></div>
+            <h3>Content Creation</h3>
+            <p>End-to-end content production — concept, storyboard, capture direction, and final edit — for creators and brands.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 6 — TESTIMONIALS (auto-scroll horizontal)
+    ==================================================== -->
+    <section id="testimonials">
+      <div class="testimonials-header fade-in">
+        <span class="section-label">Kind Words</span>
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-subtitle">What clients say about working with me.</p>
+      </div>
+
+      <!-- The track is duplicated in JS to create seamless infinite scroll -->
+      <div class="testimonials-track-wrap">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Mahmud completely transformed our brand. His designs are not just beautiful — they communicate exactly what we stand for. Absolute professional!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AK</div>
+              <div>
+                <p class="testimonial-name">Aisha Kamara</p>
+                <p class="testimonial-company"><i class="fa fa-building" style="margin-right:5px;"></i>CEO, Kamara Luxe</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">The video editing was cinematic and exactly matched our vision. He delivered ahead of schedule and the quality blew our entire team away.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JO</div>
+              <div>
+                <p class="testimonial-name">James Okonkwo</p>
+                <p class="testimonial-company"><i class="fa-brands fa-youtube" style="margin-right:5px;color:#FF0000;"></i>Content Creator, 500K+ subs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i></div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">We hired Mahmud for a full social media rebrand. The result was a 300% increase in engagement within the first month. Highly recommend!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">FN</div>
+              <div>
+                <p class="testimonial-name">Fatima Nwosu</p>
+                <p class="testimonial-company"><i class="fa-brands fa-instagram" style="margin-right:5px;color:#E1306C;"></i>Marketing Director, StyleNG</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Exceptional work ethic and creative intuition. Mahmud's motion graphics gave our product launch a premium, world-class feel.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SE</div>
+              <div>
+                <p class="testimonial-name">Samuel Eze</p>
+                <p class="testimonial-company"><i class="fa-brands fa-linkedin" style="margin-right:5px;color:#0077B5;"></i>Product Manager, TechHive</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Professional, creative, and always on time. The packaging design Mahmud created for us is now one of the most recognized on store shelves.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">BI</div>
+              <div>
+                <p class="testimonial-name">Blessing Idowu</p>
+                <p class="testimonial-company"><i class="fa fa-store" style="margin-right:5px;"></i>Founder, NaturaPure Organics</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 7 — PROCESS (unique section)
+    ==================================================== -->
+    <section id="process" style="min-height:auto; padding:80px 60px;">
+      <div class="section-inner">
+        <span class="section-label">How I Work</span>
+        <h2 class="section-title">My Process</h2>
+        <p class="section-subtitle">A structured, collaborative approach that ensures every project hits the mark.</p>
+
+        <div class="process-steps">
+
+          <div class="process-step fade-in">
+            <div class="step-number">01</div>
+            <h3>Discovery</h3>
+            <p>Deep-dive into your brand, goals, audience, and competitors to lay a solid creative foundation.</p>
+          </div>
+
+          <div class="process-step fade-in">
+            <div class="step-number">02</div>
+            <h3>Concept</h3>
+            <p>Mood boards, wireframes, and initial concepts presented for your feedback and direction.</p>
+          </div>
+
+          <div class="process-step fade-in">
+            <div class="step-number">03</div>
+            <h3>Design</h3>
+            <p>Full execution of the approved concept with revisions until the result is perfect.</p>
+          </div>
+
+          <div class="process-step fade-in">
+            <div class="step-number">04</div>
+            <h3>Delivery</h3>
+            <p>Final files handed over in all required formats with source files and usage guidelines.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 8 — CONTACT
+    ==================================================== -->
+    <section id="contact">
+      <div class="section-inner">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Have a project in mind? Let's create something extraordinary together.</p>
+
+        <div class="contact-grid">
+
+          <!-- Contact info -->
+          <div class="fade-in">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <p class="contact-info-label">Email</p>
+                <!-- Change to your actual email -->
+                <p class="contact-info-value">oshiokealiu4@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa fa-phone"></i></div>
+              <div>
+                <p class="contact-info-label">Phone / WhatsApp</p>
+                <p class="contact-info-value">+234 810 907 3255</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa fa-location-dot"></i></div>
+              <div>
+                <p class="contact-info-label">Location</p>
+                <p class="contact-info-value">Lagos, Nigeria</p>
+              </div>
+            </div>
+
+            <!-- Social media links — each with its brand icon -->
+            <div class="contact-social-links">
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-behance"></i> Behance
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-dribbble"></i> Dribbble
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-youtube"></i> YouTube
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-x-twitter"></i> Twitter / X
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-telegram"></i> Telegram
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="fade-in">
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="E-mail" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Subject" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell me about your project..."></textarea>
+              </div>
+              <button class="btn" onclick="handleFormSubmit(event)">
+                <i class="fa fa-paper-plane"></i> Send Message
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- /main-content -->
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <p>© 2025 <span>Mahmud Abdurrahman</span>. Designed by ,<a href="" target="_blank"><span>Aliu Oshioke</span></a></p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    /* ==========================================================
+       1. MOBILE NAV
+    ========================================================== */
+    const hamburger  = document.getElementById('hamburgerBtn');
+    const mobileNav  = document.getElementById('mobileNav');
+    const closeBtn   = document.getElementById('closeNavBtn');
+
+    // Open mobile nav
+    hamburger.addEventListener('click', () => mobileNav.classList.add('open'));
+
+    // Close on X button
+    closeBtn.addEventListener('click', () => mobileNav.classList.remove('open'));
+
+    // Close when a nav link is clicked
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+      link.addEventListener('click', () => mobileNav.classList.remove('open'));
+    });
+
+
+    /* ==========================================================
+       2. ACTIVE SIDEBAR LINK ON SCROLL
+    ========================================================== */
+    const sections    = document.querySelectorAll('section[id]');
+    const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+    const updateActiveLink = () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+      });
+
+      sidebarLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      });
+    };
+
+    window.addEventListener('scroll', updateActiveLink, { passive: true });
+
+
+    /* ==========================================================
+       3. SCROLL-TO-TOP BUTTON
+    ========================================================== */
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+
+    /* ==========================================================
+       4. INTERSECTION OBSERVER — fade-in on scroll
+    ========================================================== */
+    const fadeEls = document.querySelectorAll('.fade-in');
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    fadeEls.forEach(el => fadeObserver.observe(el));
+
+
+    /* ==========================================================
+       5. SKILL BAR ANIMATION — triggers when resume section visible
+    ========================================================== */
+    const skillBars = document.querySelectorAll('.skill-bar-fill');
+
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          const width  = target.getAttribute('data-width');
+          target.style.width = width + '%';
+          barObserver.unobserve(target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    skillBars.forEach(bar => barObserver.observe(bar));
+
+
+    /* ==========================================================
+       6. PORTFOLIO FILTER
+    ========================================================== */
+    const filterBtns  = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        portfolioCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          const show = (filter === 'all') || (category === filter);
+
+          // Animate hide/show
+          if (show) {
+            card.style.display = 'block';
+            setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'scale(1)'; }, 10);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.9)';
+            setTimeout(() => { card.style.display = 'none'; }, 350);
+          }
+        });
+      });
+    });
+
+    // Add transition styles to portfolio cards
+    portfolioCards.forEach(card => {
+      card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
+    });
+
+
+    /* ==========================================================
+       7. TESTIMONIALS — duplicate cards for seamless infinite scroll
+    ========================================================== */
+    const track = document.getElementById('testimonialsTrack');
+
+    if (track) {
+      // Clone all cards and append so the loop is seamless
+      const cards = track.innerHTML;
+      track.innerHTML = cards + cards; // duplicate
+
+      // Recalculate animation duration based on total width
+      // Base: ~28s for 5 cards, scale proportionally
+      const totalCards = track.children.length;
+      const duration   = (totalCards / 2) * 5.6; // ~5.6s per original card
+      track.style.animationDuration = duration + 's';
+    }
+
+
+    /* ==========================================================
+       8. SIMPLE CONTACT FORM HANDLER
+       Replace this with your actual form submission logic
+       (e.g., EmailJS, Netlify Forms, Formspree, etc.)
+    ========================================================== */
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name    = document.getElementById('name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // TODO: Replace alert with actual send logic (e.g., fetch to Formspree endpoint)
+      alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
+
+      // Reset form fields
+      ['name','email','subject','message'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+    }
+  </script>
+
+</body>
+</html>
